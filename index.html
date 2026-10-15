@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Max Benzmüller — football player (central midfield, right wing) at FC Viktoria 1889 Berlin U18, formerly Shabab Al Ahli Dubai U15/U16. Sports CV with career, achievements and running results.">
+<link rel="canonical" href="https://cbenzmueller.github.io/max-benzmueller/">
+<meta property="og:title" content="Max Benzmüller — Sports CV">
+<meta property="og:description" content="Football player at FC Viktoria 1889 Berlin U18 · formerly Shabab Al Ahli Dubai · runner.">
+<meta property="og:image" content="https://cbenzmueller.github.io/max-benzmueller/img/shabab-action.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2312202e'/%3E%3Ctext x='32' y='45' font-size='36' font-family='Helvetica,Arial,sans-serif' font-weight='800' text-anchor='middle' fill='%2363b3e8'%3EMB%3C/text%3E%3C/svg%3E">
+<title>Max Benzmüller — Sports CV</title>
+<style>
+  :root {
+    --ink: #12202e;
+    --ink-soft: #52606d;
+    --paper: #f7f9fb;
+    --card: #ffffff;
+    --rule: #dde3e9;
+    --accent: #2a8fd4;      /* Viktoria sky blue */
+    --accent-ink: #1a6aa3;
+    --hot: #e0313b;         /* Shabab red, used sparingly */
+    --hero-bg: #12202e;
+    --hero-ink: #f4f7fa;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e6edf3;
+      --ink-soft: #9aa7b4;
+      --paper: #0d151d;
+      --card: #15212c;
+      --rule: #263544;
+      --accent: #63b3e8;
+      --accent-ink: #8cc8f0;
+      --hero-bg: #0a1118;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-ink); text-decoration: none; border-bottom: 1px solid currentColor; }
+  a:hover { color: var(--accent); }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* ---------- hero ---------- */
+  .hero { background: var(--hero-bg); color: var(--hero-ink); padding: 3.2rem 0 3rem; }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: 2.5rem; align-items: center; }
+  .overline {
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.28em;
+    text-transform: uppercase; color: #63b3e8; margin-bottom: 1rem;
+  }
+  h1 {
+    font-weight: 800; font-size: clamp(2.6rem, 7vw, 4.4rem);
+    line-height: 1; letter-spacing: -0.025em; margin-bottom: 0.9rem;
+  }
+  .role { font-size: 1.15rem; color: #c9d4de; margin-bottom: 1.6rem; max-width: 34rem; }
+  .role b { color: #fff; font-weight: 700; }
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; max-width: 34rem; }
+  .stat { border-left: 3px solid #63b3e8; padding: 0.2rem 0 0.2rem 0.85rem; }
+  .stat.red { border-color: var(--hot); }
+  .stat .n { font-size: 1.55rem; font-weight: 800; line-height: 1.15; color: #fff; }
+  .stat .l { font-size: 0.8rem; color: #9fb0bf; line-height: 1.35; }
+  .hero-photo { position: relative; }
+  .hero-photo img { border-radius: 10px; aspect-ratio: 4 / 3; object-fit: cover; object-position: 75% 40%; width: 100%; height: auto; }
+  .hero-photo figcaption { font-family: var(--mono); font-size: 0.68rem; color: #8798a8; margin-top: 0.55rem; letter-spacing: 0.04em; }
+  .profiles { margin-top: 1.6rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .profiles a {
+    border: 1px solid #34495c; border-radius: 999px; padding: 0.3rem 0.85rem;
+    font-size: 0.82rem; color: #dbe6ef;
+  }
+  .profiles a:hover { border-color: #63b3e8; color: #fff; }
+
+  /* ---------- nav ---------- */
+  nav.top {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav.top .wrap { display: flex; gap: 1.4rem; overflow-x: auto; padding-top: 0.8rem; padding-bottom: 0.8rem; }
+  nav.top a {
+    border: none; color: var(--ink-soft); font-size: 0.82rem; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
+  }
+  nav.top a:hover { color: var(--accent); }
+
+  /* ---------- sections ---------- */
+  section { padding: 3rem 0 0.5rem; }
+  .seclabel {
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.24em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
+  }
+  h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); font-weight: 800; letter-spacing: -0.015em; margin-bottom: 1.2rem; }
+  h3 { font-size: 1.2rem; font-weight: 750; letter-spacing: -0.005em; }
+  .prose { max-width: 46rem; font-size: 1.04rem; }
+  .prose p + p { margin-top: 0.85em; }
+
+  /* ---------- career timeline ---------- */
+  .timeline { max-width: 52rem; margin-top: 0.5rem; }
+  .tl {
+    display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem;
+    border-top: 1px dashed var(--rule); padding: 0.7rem 0;
+  }
+  .tl:first-child { border-top: none; }
+  .tl .yr { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); padding-top: 0.15rem; }
+  .tl .ev b { font-weight: 700; }
+  .tl .ev span { color: var(--ink-soft); font-size: 0.92rem; }
+
+  /* ---------- club cards ---------- */
+  .clubs { display: grid; gap: 1.2rem; margin-top: 2.2rem; }
+  .club {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 1.4rem 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+  }
+  .club.solo { grid-template-columns: 1fr; }
+  .club .meta { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; margin: 0.15rem 0 0.8rem; }
+  .club p, .club li { font-size: 0.96rem; }
+  .club p + p { margin-top: 0.6em; }
+  .club ul { list-style: none; margin-top: 0.4rem; }
+  .club li { padding-left: 1.1rem; position: relative; margin: 0.25rem 0; }
+  .club li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--accent); }
+  .club h4 { font-size: 0.74rem; font-family: var(--mono); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); margin-top: 1rem; }
+  .medal { display: inline-block; font-size: 0.72rem; font-weight: 700; border-radius: 4px; padding: 0.05rem 0.4rem; margin-right: 0.3rem; vertical-align: 0.08em; }
+  .gold { background: #f6c945; color: #3d2e00; }
+  .silver { background: #cfd6dd; color: #26313b; }
+
+  .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; align-content: start; }
+  .gallery.one { grid-template-columns: 1fr; }
+  .gallery button { border: 0; padding: 0; background: none; cursor: zoom-in; border-radius: 8px; overflow: hidden; }
+  .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 0.25s; }
+  .gallery.one img { aspect-ratio: 16 / 9; }
+  .gallery .tall img { object-position: top; }
+  .gallery button:hover img { transform: scale(1.03); }
+  .gallery .wide { grid-column: span 2; }
+  .gallery .wide img { aspect-ratio: 16 / 7; }
+
+  /* ---------- running table ---------- */
+  .running { display: grid; grid-template-columns: 1fr 15rem; gap: 2rem; align-items: start; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th { text-align: left; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; padding: 0 0.6rem 0.5rem 0; border-bottom: 2px solid var(--rule); }
+  td { padding: 0.6rem 0.6rem 0.6rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td.t { font-family: var(--mono); font-weight: 700; white-space: nowrap; }
+  td.d { font-weight: 700; white-space: nowrap; }
+  td .note { display: block; color: var(--ink-soft); font-size: 0.82rem; }
+  .running figure img { border-radius: 10px; }
+  .running figcaption, .school figcaption { font-family: var(--mono); font-size: 0.68rem; color: var(--ink-soft); margin-top: 0.5rem; }
+
+  /* ---------- school ---------- */
+  .school { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+  .school .gallery img { aspect-ratio: auto; }
+
+  footer { margin-top: 4rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--ink-soft); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+
+  /* ---------- lightbox ---------- */
+  dialog { border: 0; padding: 0; background: transparent; max-width: 94vw; max-height: 92vh; margin: auto; }
+  dialog::backdrop { background: rgba(5, 10, 15, 0.88); }
+  dialog img { max-width: 94vw; max-height: 86vh; border-radius: 8px; margin: 0 auto; }
+  dialog p { color: #e6edf3; text-align: center; font-size: 0.9rem; margin-top: 0.6rem; }
+
+  @media (max-width: 820px) {
+    .hero .wrap, .club, .running, .school { grid-template-columns: 1fr; }
+    .hero { padding-top: 2.4rem; }
+    .running figure { max-width: 15rem; }
+  }
+  @media (max-width: 520px) {
+    .tl { grid-template-columns: 1fr; gap: 0.1rem; }
+    .club { padding: 1.1rem; }
+    td.d { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="overline">Sports CV · Football &amp; Running</p>
+      <h1>Max Benzmüller</h1>
+      <p class="role">Central midfielder &amp; right winger at <b>FC Viktoria 1889 Berlin U18</b>. Formerly Shabab Al Ahli Dubai (U15/U16). German &amp; US nationality.</p>
+      <div class="stats">
+        <div class="stat"><div class="n">6 goals</div><div class="l">in 6 games, A-Junioren Landesliga Berlin 2026/27<br>(as of 15 Oct 2026)</div></div>
+        <div class="stat red"><div class="n">4× runner-up</div><div class="l">UAE National League, Cup &amp; Super Cup with Shabab Al Ahli</div></div>
+        <div class="stat"><div class="n">Player of the Season</div><div class="l">U14, Kent College Dubai 2023/24</div></div>
+        <div class="stat"><div class="n">18:43</div><div class="l">5 km personal best, Dubai 2025</div></div>
+      </div>
+      <div class="profiles">
+        <a href="https://www.fussball.de/spielerprofil/-/userid/02VT4F6PQ0000000VUM1D516VU4NQ5S6#!/">fussball.de</a>
+        <a href="https://www.uaefa.ae/en/profile/100853">UAE FA profile</a>
+        <a href="https://www.besoccer.com/player/max-anton-3513315">BeSoccer</a>
+        <a href="https://ladv.de/leistungsdatenbank/athletenprofil/497212/Max-Benzm%C3%BCller.htm">Ladv athletics</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/shabab-action.jpg" alt="Max (green shirt, number 39) dribbling the ball for Shabab Al Ahli" width="1593" height="1198">
+      <figcaption>In action for Shabab Al Ahli, UAE National League</figcaption>
+    </figure>
+  </div>
+</header>
+
+<nav class="top" aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#career">Career</a>
+    <a href="#clubs">Clubs</a>
+    <a href="#running">Running</a>
+    <a href="#school">School</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="about">
+    <p class="seclabel">Introduction</p>
+    <h2>About me</h2>
+    <div class="prose">
+      <p>My name is Max. I play football for the U18 of <a href="https://viktoria.berlin/">FC Viktoria 1889 Berlin</a> in the <a href="https://www.fussball.de/mannschaft/viktoria-berlin-u18-fc-viktoria-89-berlin-berlin/-/saison/2627/team-id/011MIF009G000000VTVG0001VTR8C1K7#!/">A-Junioren Landesliga</a> of Berlin, and I occasionally start in running competitions for the club <a href="https://silvesterlauf.de/">Silvesterlauf Trier</a>. I started playing football around 2016. In 2022/23 I was a member of the Berlin state selection squad in my age group, and from 2021 to 2023 I was part of the German Football Association's (DFB) youth development programme.</p>
+      <p>From 2023 to 2025 I lived in Dubai, where I joined <a href="https://www.shababalahli.ae/">Shabab Al Ahli</a>, one of the top football clubs in the UAE and the Middle East. I played in the <a href="https://www.uaefa.ae/en/competition/1583">UAE National League</a> with the club's U15 and U16 first teams, alongside several UAE youth national players, and won four vice-championships in league, cup and super cup.</p>
+      <p>After returning to Germany in autumn 2025, I rejoined Viktoria Berlin and played the 2025/26 season with the U17 in the <a href="https://www.dfb.de/maenner/ligen/u-17-dfb-nachwuchsliga">DFB U17 Nachwuchsliga</a>. Since summer 2026 I have been playing for the U18. Also take a look at the websites of my sisters <a href="https://sites.google.com/view/carla-benzmueller-sports/">Carla</a> and <a href="https://sites.google.com/view/elena-benzmueller-sports/">Elena</a>, who are both into sports as well.</p>
+    </div>
+  </section>
+
+  <section id="career">
+    <p class="seclabel">Football</p>
+    <h2>Career</h2>
+    <div class="timeline">
+      <div class="tl"><div class="yr">2026/27</div><div class="ev"><b>FC Viktoria 1889 Berlin U18</b> — A-Junioren Landesliga Berlin<br><span>6 goals in the first 6 games</span></div></div>
+      <div class="tl"><div class="yr">2025/26</div><div class="ev"><b>FC Viktoria 1889 Berlin U17</b> — DFB U17 Nachwuchsliga</div></div>
+      <div class="tl"><div class="yr">2023–2025</div><div class="ev"><b>Shabab Al Ahli, Dubai U15 &amp; U16</b> — UAE National League<br><span>4× vice-champion (league, cup, super cup)</span></div></div>
+      <div class="tl"><div class="yr">2023/24</div><div class="ev"><b>Kent College Dubai U14, U15 &amp; U19</b> — school teams<br><span>DASSA league titles; U14 Player of the Season 2023/24</span></div></div>
+      <div class="tl"><div class="yr">2021–2023</div><div class="ev"><b>FC Viktoria 1889 Berlin U14/U15</b> — selection team<br><span>Berlin U14 league champion 2022/23; Nike Youth Cup finalist</span></div></div>
+      <div class="tl"><div class="yr">2021–2023</div><div class="ev"><b>Berlin state selection squad &amp; DFB talent programme</b></div></div>
+      <div class="tl"><div class="yr">2020</div><div class="ev"><b>Fundación Real Madrid Clinic</b>, Graal-Müritz — nominated for the clinic finals</div></div>
+      <div class="tl"><div class="yr">since 2016</div><div class="ev"><b>FC Viktoria 1889 Berlin</b> — recreational youth teams</div></div>
+    </div>
+  </section>
+
+  <section id="clubs">
+    <p class="seclabel">Football</p>
+    <h2>Clubs &amp; teams</h2>
+
+    <div class="clubs">
+
+      <article class="club">
+        <div>
+          <h3>FC Viktoria 1889 Berlin U18 &amp; U17</h3>
+          <p class="meta">Berlin · since autumn 2025</p>
+          <p>After returning from Dubai, I rejoined Viktoria Berlin. In 2025/26 I played with the U17 in the DFB U17 Nachwuchsliga; the season ended with a win against FC Union Berlin in the last game in May 2026.</p>
+          <p>Since the 2026/27 season I play for the <a href="https://www.fussball.de/mannschaft/viktoria-berlin-u18-fc-viktoria-89-berlin-berlin/-/saison/2627/team-id/011MIF009G000000VTVG0001VTR8C1K7#!/">U18 (A-Junioren Landesliga)</a>, with 6 goals in the first 6 games (<a href="https://www.fussball.de/spielerprofil/-/userid/02VT4F6PQ0000000VUM1D516VU4NQ5S6#!/">player profile</a>).</p>
+        </div>
+        <div class="gallery">
+          <button class="wide" data-cap="Viktoria Berlin U17, season 2025/26 — Max is in the lower row on the right"><img src="img/viktoria-u17-2025-26.jpg" alt="Team photo of the Viktoria Berlin U17, season 2025/26" loading="lazy"></button>
+          <button class="wide" data-cap="Celebrating the win against FC Union Berlin in the last game of the DFB U17 Nachwuchsliga, May 2026"><img src="img/viktoria-u17-celebration-2026.jpg" alt="Viktoria U17 players celebrating in the dressing room" loading="lazy"></button>
+        </div>
+      </article>
+
+      <article class="club">
+        <div>
+          <h3>Shabab Al Ahli U16 &amp; U15</h3>
+          <p class="meta">Dubai, UAE · Sep 2023 – Jun 2025</p>
+          <p><a href="https://en.wikipedia.org/wiki/Shabab_Al_Ahli_Club">Shabab Al Ahli</a> is a professional Emirati club whose men's team plays in the UAE ADNOC Pro League and is one of the most successful in the country. I played for the club's U15 and U16 selection teams. My debut in the <a href="https://www.uaefa.ae/en/competition/1583">UAE National League U15</a> was on 26 December 2023: a <a href="https://www.besoccer.com/match/shabab-al-ahli-sub-15/hatta-dubai-sub-15/2024546756">7:1 win against Hatta Dubai</a>, and I scored.</p>
+          <h4>Achievements</h4>
+          <ul>
+            <li><span class="medal silver">2nd</span>UAE National League U16, 2024/25</li>
+            <li><span class="medal silver">2nd</span>UAE National Cup U16, 2024/25</li>
+            <li><span class="medal silver">2nd</span>UAE National Super Cup U16, 2024/25</li>
+            <li><span class="medal silver">2nd</span>UAE National League U15, 2023/24 (<a href="https://www.besoccer.com/team/table/shabab-al-ahli-sub-15">table</a>)</li>
+          </ul>
+          <h4>Player profile</h4>
+          <ul>
+            <li>Central midfield, right wing and defence</li>
+            <li>Official <a href="https://www.uaefa.ae/en/profile/100853">profile</a> at the <a href="https://www.uaefa.ae/en">UAE Football Association</a> and on <a href="https://www.besoccer.com/player/max-anton-3513315">BeSoccer</a></li>
+            <li>Squads of about 28–30 players, including six UAE national youth players (<a href="https://www.besoccer.com/team/squad/shabab-al-ahli-sub-15">U15 squad 2023/24</a>)</li>
+            <li>Daily training at the Shabab Al Ahli Academy in Al Qusais, Dubai, with an excellent team of coaches and physiotherapists</li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <button data-cap="Shabab Al Ahli, number 39"><img src="img/shabab-portrait.jpg" alt="Max in the red Shabab Al Ahli kit with number 39" loading="lazy" style="object-position: top"></button>
+          <button data-cap="In a league match for Shabab Al Ahli"><img src="img/shabab-action.jpg" alt="Max dribbling in the green away kit" loading="lazy"></button>
+          <button data-cap="Training at the Shabab Al Ahli Academy, Al Qusais"><img src="img/shabab-training.jpg" alt="Max in a training bib on the pitch" loading="lazy"></button>
+          <button data-cap="The Shabab Al Ahli team with coaches and staff"><img src="img/shabab-team.jpg" alt="Shabab Al Ahli youth team photo at night with coaches and staff" loading="lazy"></button>
+        </div>
+      </article>
+
+      <article class="club">
+        <div>
+          <h3>Kent College Dubai U19, U15 &amp; U14</h3>
+          <p class="meta">Dubai, UAE · 2023/24 · school teams</p>
+          <ul>
+            <li><span class="medal gold">1st</span>DASSA <a href="https://www.schoolssports.com/competitionmicrosite/fixtures.asp?TSID=7875&amp;G=Competitive%20A">Competitive A league</a> with the U14 team</li>
+            <li><span class="medal gold">1st</span>DASSA <a href="https://www.schoolssports.com/competitionmicrosite/fixtures.asp?TSID=7878&amp;G=Competitive%20E">Competitive E league</a> with the U19 team</li>
+            <li><span class="medal gold">★</span>U14 Player of the Season, football 2023/24</li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <button class="wide" data-cap="Kent College U19 football team"><img src="img/kent-college-u19.jpg" alt="Kent College Dubai U19 football team in maroon kits" loading="lazy"></button>
+          <button class="wide" data-cap="U14 Player of the Season award, Kent College 2023/24"><img src="img/kent-player-of-the-season.jpg" alt="Certificate and medal: U14 Player of the Season, football 2023/24" loading="lazy"></button>
+        </div>
+      </article>
+
+      <article class="club">
+        <div>
+          <h3>FC Viktoria 1889 Berlin U15 &amp; U14</h3>
+          <p class="meta">Berlin · 2021 – 2023 · selection team</p>
+          <p>FC Viktoria 1889 Berlin is one of the German football clubs with the most active players and was twice German champion in its early history (<a href="https://de.wikipedia.org/wiki/FC_Viktoria_1889_Berlin">Wikipedia</a>). In 2021/22 and 2022/23 I played for its U14 selection team.</p>
+          <ul>
+            <li><span class="medal gold">1st</span>Berlin U14 league (C-Junioren Landesklasse), 2022/23</li>
+            <li><span class="medal silver">2nd</span>Nike Youth Cup of Berlin, 2022/23 — final lost against Dynamo Berlin</li>
+            <li>International tournaments against teams such as Manchester United, Austria Klagenfurt and RB Leipzig</li>
+          </ul>
+        </div>
+        <div class="gallery one">
+          <button data-cap="Viktoria Berlin at an international tournament"><img src="img/viktoria-u15-tournament.jpg" alt="Viktoria Berlin youth team in blue tracksuits at an international tournament" loading="lazy"></button>
+        </div>
+      </article>
+
+      <article class="club">
+        <div>
+          <h3>Berlin selection squad &amp; DFB talent programme</h3>
+          <p class="meta">Berlin · 2021 – 2023</p>
+          <ul>
+            <li>Member of the Berlin state selection squad in 2022/23 (<a href="https://www.berliner-fussball.de/talentfoerderung/news/berliner-u14-dreifach-gefragt/">mentioned here</a>)</li>
+            <li>In 2021/22 and 2022/23, sponsored player in the <a href="https://www.dfb.de/sportl-strukturen/talentfoerderung/talentfoerderprogramm/">youth development programme</a> of the <a href="https://www.dfb.de/en/en-start/">German Football Association (DFB)</a> and the <a href="https://www.berliner-fussball.de/talentfoerderung/junioren/">Berlin Football Association (BFV)</a></li>
+            <li>In addition to club training, weekly sessions with special junior coaches of the DFB</li>
+          </ul>
+        </div>
+        <div class="gallery one">
+          <button data-cap="Berlin selection squad"><img src="img/berlin-selection.jpg" alt="Berlin selection team lined up in red kits" loading="lazy"></button>
+        </div>
+      </article>
+
+      <article class="club">
+        <div>
+          <h3>Early years</h3>
+          <p class="meta">Berlin · 2016 – 2021</p>
+          <ul>
+            <li>Before being called up to Viktoria's U14 selection squad, I played in a great recreational team at the same club (U13).</li>
+            <li>I discovered my passion for competitive football at a <a href="https://frmclinics.com/">Fundación Real Madrid Clinic</a> in Graal-Müritz in 2020 and was afterwards nominated for the clinic finals in Germany.</li>
+          </ul>
+        </div>
+        <div class="gallery one">
+          <button data-cap="Viktoria Berlin U13"><img src="img/viktoria-u13.jpg" alt="Young Viktoria Berlin team in light blue kits with coaches" loading="lazy"></button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="running">
+    <p class="seclabel">Running</p>
+    <h2>Road &amp; track results</h2>
+    <div class="running">
+      <div>
+        <p class="prose" style="margin-bottom:1.2rem">When time permits, I also start in road running and track &amp; field events. More results on <a href="https://ladv.de/leistungsdatenbank/athletenprofil/497212/Max-Benzm%C3%BCller.htm">Ladv.de</a>.</p>
+        <table>
+          <thead><tr><th>Distance</th><th>Time</th><th>Event</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td class="d">5 km</td><td class="t"><a href="https://results.hopasports.com/static_forward/en/event/expo-city-dubai-half-marathon-2025/results/certificate?inputRace=3&amp;inputPt=i&amp;resId=371">18:43</a></td><td><a href="https://results.hopasports.com/event/expo-city-dubai-half-marathon-2025">Expo City Half Marathon</a>, Dubai</td><td>2025</td></tr>
+            <tr><td class="d">3000 m</td><td class="t"><a href="https://ergebnisse.leichtathletik.de/Competitions/CurrentList/728109/14026">11:04</a></td><td>Einbeck</td><td>2024</td></tr>
+            <tr><td class="d">800 m</td><td class="t">2:29.01</td><td>Dubai</td><td>2024</td></tr>
+            <tr><td class="d">2.5 km</td><td class="t"><a href="https://results.sporthive.com/events/7136377218533258240/races/487805">8:56</a></td><td>Kalba Half Marathon event, UAE<span class="note">2nd overall, open male category</span></td><td>2023</td></tr>
+            <tr><td class="d">5 km</td><td class="t"><a href="https://my.raceresult.com/232841/results#3_E2919F">19:32</a></td><td>Idstein</td><td>2023</td></tr>
+            <tr><td class="d">4.2195 km</td><td class="t"><a href="https://berlin.r.mikatiming.com/2022/?content=detail&amp;fpid=search&amp;pid=search&amp;idp=2EF90BN86631A&amp;lang=EN_CAP&amp;event=O_2EF90BN8F3&amp;search%5Bname%5D=Benzm%C3%BCller&amp;search_event=O_2EF90BN8F3">17:27</a></td><td>Berlin Mini-Marathon</td><td>2023</td></tr>
+            <tr><td class="d">4.2195 km</td><td class="t"><a href="https://berlin.r.mikatiming.com/2019/?content=detail&amp;fpid=search&amp;pid=search&amp;idp=999999106D1A510000056E30&amp;lang=EN&amp;event=G_999999106D1A5100000000B7&amp;search%5Bname%5D=Benzm%C3%BCller&amp;search_event=G_999999106D1A5100000000B7">18:14</a></td><td>Berlin Mini-Marathon</td><td>2019</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figure class="gallery one">
+        <button data-cap="In the 2.5 km race at Kalba, UAE"><img src="img/kalba-2-5k.jpg" alt="Max running with bib number 920 at the Kalba race" loading="lazy" style="aspect-ratio:auto"></button>
+        <figcaption>2.5 km race at Kalba, UAE (2nd overall)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="school">
+    <p class="seclabel">Education</p>
+    <h2>School</h2>
+    <div class="school">
+      <div class="prose">
+        <p>I am a very good student, especially in maths and science, as well as sports, German and English. In January 2025 I was moved up from year 9 to year 10, and I graduated in Dubai with my intermediate school leaving certificate in summer 2025.</p>
+        <div class="timeline" style="margin-top:1.2rem">
+          <div class="tl"><div class="yr">since 2025</div><div class="ev"><a href="https://www.siemens-gymnasium-berlin.de/">Werner-von-Siemens-Gymnasium</a>, Berlin</div></div>
+          <div class="tl"><div class="yr">2024/25</div><div class="ev"><a href="https://germanschool.ae/">German International School Dubai</a></div></div>
+          <div class="tl"><div class="yr">2023/24</div><div class="ev"><a href="https://kentcollege.sch.ae/">Kent College Dubai</a></div></div>
+          <div class="tl"><div class="yr">2020–2023</div><div class="ev"><a href="https://www.siemens-gymnasium-berlin.de/">Werner-von-Siemens-Gymnasium</a>, Berlin</div></div>
+        </div>
+      </div>
+      <figure class="gallery one">
+        <button data-cap="Certificate of participation, Lange Nacht der Mathematik"><img src="img/math-night-certificate.jpg" alt="Certificate of participation in the Lange Nacht der Mathematik competition" loading="lazy" style="aspect-ratio:auto; max-height: 26rem; object-fit: contain"></button>
+        <figcaption>Participation in the “Lange Nacht der Mathematik” competition</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Max Benzmüller · last updated October 2026</span>
+    <span><a href="#">Back to top ↑</a></span>
+  </div>
+</footer>
+
+<dialog id="lb" aria-label="Photo">
+  <img src="" alt="">
+  <p></p>
+</dialog>
+
+<script>
+  const lb = document.getElementById('lb');
+  document.querySelectorAll('.gallery button').forEach(b => b.addEventListener('click', () => {
+    const img = b.querySelector('img');
+    lb.querySelector('img').src = img.src;
+    lb.querySelector('img').alt = img.alt;
+    lb.querySelector('p').textContent = b.dataset.cap || '';
+    lb.showModal();
+  }));
+  lb.addEventListener('click', () => lb.close());
+</script>
+</body>
+</html>
