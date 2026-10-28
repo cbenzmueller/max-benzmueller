@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cbenzmueller.github.io/max-benzmueller/sitemap.xml
