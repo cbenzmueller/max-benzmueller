@@ -5,5 +5,6 @@ Static single-page site served via GitHub Pages at
 
 - `index.html` — the whole page (no build step, no dependencies)
 - `img/` — photos, resized to ≤1600px and stripped of metadata (EXIF/GPS)
+- `docs/results/` — result sheets recovered from the MYLAPS Sporthive results API after the original links died (PDF + JSON)
 
 To add a photo: `convert in.jpg -strip -resize '1600x1600>' -quality 82 img/name.jpg`
